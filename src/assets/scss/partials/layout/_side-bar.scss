@@ -51,6 +51,7 @@
   }
 }
 
+//Media Queries
 @media only screen and (max-width: 750px) {
   .side-bar {
     @include flexCenter();
