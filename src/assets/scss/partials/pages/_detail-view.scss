@@ -1,0 +1,64 @@
+.detail-view {
+  @include flexCenter(column);
+  height: 100%;
+
+  > .swatch {
+    height: 55%;
+    width: 90%;
+
+    .swatch__hex-code {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 0.5rem;
+    }
+  }
+
+  .color-shades {
+    @include gridCol(4);
+    grid-column-gap: 1rem;
+    height: 30%;
+    width: 90%;
+    padding-top: 1rem;
+
+    > .swatch {
+      height: 90%;
+
+      .swatch__hex-code {
+        padding: 1rem 0.25rem;
+      }
+
+      //Different tints/shades of showcased swatch color
+      &:nth-child(1) {
+        .swatch__color {
+          filter: brightness(1.5);
+        }
+      }
+
+      &:nth-child(2) {
+        .swatch__color {
+          filter: brightness(1.25);
+        }
+      }
+
+      &:nth-child(3) {
+        .swatch__color {
+          filter: brightness(0.75);
+        }
+      }
+
+      &:nth-child(4) {
+        .swatch__color {
+          filter: brightness(0.5);
+        }
+      }
+    }
+  }
+
+  .clear-button {
+    @include flexCenter();
+    height: 10%;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+}

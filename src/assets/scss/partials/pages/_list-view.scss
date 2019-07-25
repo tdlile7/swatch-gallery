@@ -1,0 +1,86 @@
+.list-view {
+  position: relative;
+  height: 100%;
+
+  .no-search-results {
+    position: relative;
+    top: 5%;
+    left: 5%;
+  }
+
+  .swatches {
+    @include gridCol(4);
+    grid-gap: 1.5rem;
+    position: relative;
+    height: 85%;
+    width: 100%;
+    padding: 1.75rem;
+
+    .swatch {
+      height: 100%;
+      width: 100%;
+
+      &:hover {
+        bottom: 3px;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .pagination {
+    @include flexCenter();
+    position: relative;
+    height: 15%;
+
+    .page-item,
+    .page-item--active {
+      font-size: 1.25rem;
+      margin: 0 0.35rem;
+
+      &:hover {
+        cursor: pointer;
+        color: $active-color;
+      }
+    }
+
+    .page-item--active {
+      font-weight: bold;
+      border-bottom: 2px solid black;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .list-view {
+    .swatches {
+      @include gridCol(3);
+      max-height: 85%;
+      overflow-y: auto;
+
+      .swatch {
+        height: 20vh;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .list-view {
+    .swatches {
+      @include gridCol(2);
+      max-height: 85%;
+      overflow-y: auto;
+
+      .swatch {
+        height: 20vh;
+      }
+    }
+
+    .pagination {
+      .page-item,
+      .page-item--active {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
