@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Swatch = props => {
   const { color } = props;
@@ -15,6 +16,10 @@ const Swatch = props => {
       <div className="swatch__hex-code">{hexCode}</div>
     </div>
   );
+};
+
+Swatch.propTypes = {
+  color: PropTypes.object.isRequired
 };
 
 export default Swatch;
