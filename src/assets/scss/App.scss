@@ -14,7 +14,7 @@ $active-color: rgb(192, 21, 21);
   flex-direction: $type;
 }
 
-//Default Styles -- Unsets default css styles of certain elements
+//Unsets default css styles of certain elements
 @import "./partials/default";
 
 //Class Styles

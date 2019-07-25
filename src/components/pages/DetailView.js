@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import Swatch from "../Swatch";
 import ColorContext from "../../contexts/Color/colorContext";
+import Swatch from "../Swatch";
 import _ from "lodash";
 import { Link } from "react-router-dom";
 

@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from "react";
 import Header from "./components/layout/Header";
-import { Route, Switch, Redirect } from "react-router-dom";
 import SideBar from "./components/layout/SideBar";
 import ListView from "./components/pages/ListView";
 import DetailView from "./components/pages/DetailView";
 import ColorContext from "./contexts/Color/colorContext";
+import { Route, Switch, Redirect } from "react-router-dom";
 import "./assets/scss/App.scss";
 
 const App = () => {

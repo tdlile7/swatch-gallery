@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import _ from "lodash";
 import ColorContext from "../contexts/Color/colorContext";
+import _ from "lodash";
 
 const Pagination = () => {
   // Contexts

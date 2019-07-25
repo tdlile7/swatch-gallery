@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import ColorCategory from "../ColorCategory";
 import ColorContext from "../../contexts/Color/colorContext";
+import ColorCategory from "../ColorCategory";
 import { Link } from "react-router-dom";
 
 const SideBar = () => {
